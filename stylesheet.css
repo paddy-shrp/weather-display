@@ -1,0 +1,171 @@
+:root {
+  --background: rgb(247, 246, 233);
+  --mainColor: black;
+  --fontColor: black;
+}
+
+.dark {
+  --background: black;
+  --mainColor: rgb(247, 246, 233);
+  --fontColor: rgb(247, 246, 233);
+}
+
+body {
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--background);
+  font-family: "Raleway";
+  color: var(--fontColor);
+}
+
+.sides {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.topside {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.clockHourlyDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  font-family: "Electrolize", sans-serif;
+  font-weight: bold;
+  font-size: 12vw;
+  letter-spacing: 1vw;
+}
+
+/* Hourly Forecast Box */
+
+.hourlyForecastDisplays {
+  display: flex;
+  justify-content: space-around;
+}
+
+.hourlyForecastBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 1.5vw;
+}
+
+.leftSideBorder {
+  border-left: 0.1vw solid var(--mainColor);
+}
+
+i.hourlyForecastIcon {
+  font-size: 4vw;
+  margin-top: 1.5vw;
+  margin-bottom: 1.5vw;
+}
+
+/* Top-Left Side*/
+
+.weatherTodayDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4vw;
+}
+
+/* Weather Today Box */
+
+.weatherTodayFlexItem {
+  padding: 1vw;
+}
+
+i.mainIcon {
+  font-size: 10vw;
+  text-align: center;
+}
+
+.temperatureDisplay {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: end;
+
+  width: 100%;
+}
+
+.todaysTemperatureBox {
+  padding: 0.5vw;
+}
+
+.infoToday {
+  display: flex;
+  font-size: 3vw;
+  margin-left: 3vw;
+}
+
+.infoBlock {
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+}
+
+/* Botside */
+
+.botside {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+
+/* Daily Forecast Box */
+
+.dailyForecastBox {
+  display: flex;
+  flex-direction: column;
+  min-width: 2vw;
+  border-radius: 2vw;
+  padding: 2vw;
+}
+
+i.dailyForecastIcon {
+  font-size: 7vw;
+  text-align: center;
+}
+
+.dailyForecastTemperatureDisplays {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.dailyForecastMinMaxTemperature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: end;
+  padding: 0.1vw;
+}
+
+.dailyForecastDayOfWeek {
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
