@@ -14,6 +14,10 @@ function setTheme(isDay) {
   else document.body.className = "dark";
 }
 
+function reloadPage() {
+  window.location.reload();
+}
+
 window.onload = () => {
   updateForecast();
   updateCurrentWeather();
@@ -25,4 +29,6 @@ window.onload = () => {
   setInterval(updateClock, 500);
   setInterval(updateCurrentWeather, 15 * 1000);
   setInterval(updateForecast, 5 * 60 * 1000);
+
+  setInterval(reloadPage, 60 * 60 * 1000);
 };
