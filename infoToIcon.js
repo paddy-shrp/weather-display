@@ -14,8 +14,9 @@ function unixTimestampToClockTime(unixTimestamp) {
   return hoursString + ":" + minutesString;
 }
 
-function isDayFromUnixTimestamp(timestamp) {
-  if (timestamp == 0) timestamp = new Date().getTime();
+function isDayFromUnixTimestamp(timestamp = 0) {
+  if (timestamp == 0) timestamp = new Date().getTime() / 1000;
+  console.log(timestamp);
   return timestamp > lastSunRiseTimestamp && timestamp < lastSunSetTimestamp;
 }
 
