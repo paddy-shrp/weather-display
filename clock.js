@@ -9,8 +9,8 @@ function updateClock() {
   document.getElementById("clock_minutes").innerHTML = minutesString;
 }
 
-function setTheme(isDay) {
-  if (isDay) document.body.className = "";
+function updateTheme() {
+  if (isDayFromUnixTimestamp()) document.body.className = "";
   else document.body.className = "dark";
 }
 
@@ -23,11 +23,9 @@ window.onload = () => {
   updateCurrentWeather();
   updateClock();
 
-  let isDay = isDayFromUnixTimestamp();
-  setTheme(isDay);
-
   setInterval(updateClock, 500);
   setInterval(updateCurrentWeather, 15 * 1000);
+  setInterval(updateTheme);
   setInterval(updateForecast, 5 * 60 * 1000);
 
   setInterval(reloadPage, 60 * 60 * 1000);
