@@ -95,25 +95,33 @@ i.mainIcon {
   text-align: center;
 }
 
-.temperatureDisplay {
+.todaysTemperatureDisplay {
   display: flex;
   justify-content: space-around;
 
   font-size: 3vw;
   font-weight: bold;
-  text-align: end;
+  text-align: center;
 
   width: 100%;
 }
 
-.todaysTemperatureBox {
+.todaysTemperatureDisplayBox {
   padding: 0.5vw;
+  width: 100%;
+}
+
+.todaysTemperatureDisplaySeperator {
+  padding: 0.5vw;
+  width: 10%;
 }
 
 .infoToday {
   display: flex;
+  justify-content: flex-start;
   font-size: 3vw;
   margin-left: 3vw;
+  width: 100%;
 }
 
 .infoBlock {
@@ -121,6 +129,7 @@ i.mainIcon {
   padding-left: 2vw;
   padding-right: 2vw;
   padding-top: 1vw;
+  width: 17%;
 }
 
 /* Botside */

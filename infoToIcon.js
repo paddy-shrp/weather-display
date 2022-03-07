@@ -16,8 +16,16 @@ function unixTimestampToClockTime(unixTimestamp) {
 
 function isDayFromUnixTimestamp(timestamp = 0) {
   if (timestamp == 0) timestamp = new Date().getTime() / 1000;
-  console.log(timestamp);
   return timestamp > lastSunRiseTimestamp && timestamp < lastSunSetTimestamp;
+}
+
+function getSunSetRiseTime() {
+  return isDayFromUnixTimestamp() ? lastSunSetTimestamp : lastSunRiseTimestamp;
+}
+
+function getSunSetRiseIcon() {
+  let s = "wi wi-sun";
+  return isDayFromUnixTimestamp() ? s + "set" : s + "rise";
 }
 
 function windDegreeToIconString(deg) {

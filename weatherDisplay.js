@@ -47,7 +47,8 @@ function updateCurrentWeatherDisplay(iconCode, temp, flTemp, windDeg, windSpeed,
   document.getElementById("c_wind_direction_icon").className = windDegreeToIconString(windDeg);
   document.getElementById("c_wind_speed").innerHTML = windSpeed.toFixed(1);
   document.getElementById("c_humidity").innerHTML = humidity;
-  document.getElementById("c_sun_set_rise_time").innerHTML = unixTimestampToClockTime(lastSunSetTimestamp);
+  document.getElementById("c_sun_set_rise_icon").className = getSunSetRiseIcon();
+  document.getElementById("c_sun_set_rise_time").innerHTML = unixTimestampToClockTime(getSunSetRiseTime());
 }
 
 function updateForecast() {
