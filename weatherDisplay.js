@@ -43,7 +43,6 @@ function updateCurrentWeather() {
 function updateCurrentWeatherDisplay(iconCode, temp, flTemp, windDeg, windSpeed, humidity) {
   document.getElementById("c_icon").className = codeToIconDayNightString(iconCode, isDayFromUnixTimestamp()) + " mainIcon";
   document.getElementById("c_temperature").innerHTML = temp.toFixed(1) + '<i class="wi wi-celsius"></i>';
-  document.getElementById("c_fl_temperature").innerHTML = flTemp.toFixed(1) + '<i class="wi wi-celsius"></i>';
   document.getElementById("c_wind_direction_icon").className = windDegreeToIconString(windDeg);
   document.getElementById("c_wind_speed").innerHTML = windSpeed.toFixed(1);
   document.getElementById("c_humidity").innerHTML = humidity;

@@ -11,6 +11,7 @@
 }
 
 body {
+  cursor: none;
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -96,24 +97,12 @@ i.mainIcon {
 }
 
 .todaysTemperatureDisplay {
-  display: flex;
-  justify-content: space-around;
-
-  font-size: 3vw;
+  font-size: 5vw;
   font-weight: bold;
   text-align: center;
 
-  width: 100%;
-}
-
-.todaysTemperatureDisplayBox {
   padding: 0.5vw;
   width: 100%;
-}
-
-.todaysTemperatureDisplaySeperator {
-  padding: 0.5vw;
-  width: 10%;
 }
 
 .infoToday {
