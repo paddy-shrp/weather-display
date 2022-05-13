@@ -19,14 +19,14 @@ function reloadPage() {
 }
 
 window.onload = () => {
-  updateForecast();
-  updateCurrentWeather();
+  updateForecastDisplays();
+  updateCurrentWeatherDisplay();
   updateClock();
   updateTheme();
 
   setInterval(updateClock, 500);
-  setInterval(updateCurrentWeather, 15 * 1000);
+  setInterval(updateCurrentWeatherDisplay, 15 * 1000);
   setInterval(updateTheme, 60 * 1000);
-  setInterval(updateForecast, 5 * 60 * 1000);
+  setInterval(updateForecastDisplays, 5 * 60 * 1000);
   setInterval(reloadPage, 60 * 60 * 1000);
 };
