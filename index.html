@@ -15,7 +15,11 @@
     <div class="topside">
       <div class="weatherTodayDisplay">
         <i id="c_icon" class="wi wi-day-sunny mainIcon weatherTodayFlexItem"></i>
-        <div id="c_temperature" class="todaysTemperatureDisplay">25<i class="wi wi-celsius"></i></div>
+        <div class="todaysTemperatureDisplay weatherTodayFlexItem">
+          <div id="c_temperature" style="font-size: 4vw; width: 100%">25<i class="wi wi-celsius"></i></div>
+          <div class="todaysTemperatureDisplaySeperator">|</div>
+          <div id="c_fl_temperature" style="width: 100%; padding: 0.5vw">36<i class="wi wi-celsius"></i></div>
+        </div>
         <div class="infoToday weatherTodayFlexItem">
           <div class="infoBlock">
             <i id="c_wind_direction_icon" class="wi wi-wind towards-0-deg"></i>

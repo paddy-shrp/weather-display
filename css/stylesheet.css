@@ -97,12 +97,19 @@ i.mainIcon {
 }
 
 .todaysTemperatureDisplay {
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
 
   padding: 0.5vw;
   width: 100%;
+}
+
+.todaysTemperatureDisplaySeperator {
+  padding: 0.5vw;
+  width: 10%;
 }
 
 .infoToday {
