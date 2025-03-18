@@ -8,7 +8,7 @@
 // SunSetRiseTime: sunSetRiseTime
 const LAT = 48.8512;
 const LON = 10.4887;
-const API_KEY = "bb842ec98257a4820ace4708cb6f043c";
+const API_KEY = "<INSERT_HERE>";
 const API_URL_CURRENT = "https://api.openweathermap.org/data/2.5/weather?lat=_lat&lon=_lon&appid=_key&units=metric";
 const API_URL_ONECALL = "https://api.openweathermap.org/data/2.5/onecall?lat=_lat&lon=_lon&exclude=minutely&appid=_key&units=metric";
 
